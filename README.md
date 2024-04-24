@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <h2>Antonio Estepa Rivera Jr</h2>
+            </div>
+            <div class="link">
+                <ul> 
+                    <li><a href="#" onclick="togglePopup('aboutPopup')">About</a></li>
+                    <script>
+                        function togglePopup(popupId) {
+                            var popup = document.getElementById(popupId);
+                            var overlay = document.getElementById('overlay');
+                    
+                            if (popup.style.display === "block") {
+                                popup.style.display = "none";
+                                overlay.style.display = "none";
+                            } else {
+                                popup.style.display = "block";
+                                overlay.style.display = "block";
+                            }
+                        }
+                    </script>
+                    
+
+                    <li><a href="projects.html">Projects</a></li>
+
+
+
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="#contact-info" onmouseover="smoothScroll('contact-info')">Contact</a></li>
+              
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="img/pic.png" alt="men" class="men">
+            <div class="main-detil">
+                <p>Hello i'm</p>
+                <h1>Antonio E. Rivera Jr.</h1>
+                <h4>Back-end Devoloper</h4>
+
+                <div class="btn">
+                    
+                    <button type="button" onclick="downloadCV()">Download CV</button>
+                    <a href="mailto:antonioestepariverajr@gmail.com?subject=Job Opportunity&body=Hi Antonio, I'm interested in discussing a potential job opportunity with you." class="btn-2">Hire Me</a>
+
+                    <script>
+                        function downloadCV() {
+                            // Create an anchor element
+                            var link = document.createElement("a");
+                            // Set the href attribute to the location of your CV file
+                            link.href = "CV.pdf";
+                            // Set the download attribute to specify the filename
+                            link.download = "CV.pdf";
+                            // Append the anchor element to the body
+                            document.body.appendChild(link);
+                            // Trigger a click event on the anchor element
+                            link.click();
+                            // Clean up: remove the anchor element from the body
+                            document.body.removeChild(link);
+                        }
+                    </script>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/antonioERiveraJr" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/antonio-rivera-712549297" target="_blank">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                </div>
+
+                <!-- Hidden pop-up -->
+                <div id="aboutPopup" class="popup">
+                    <div class="popup-content">
+                        <!-- Your About content goes here -->
+                        <h2>About Me</h2>
+                        <p>During my internship at Money Trees Company, I was part of the back-end development team where I utilized Laravel and Python to automate tasks, significantly improving team efficiency. I developed a CRUD system using Laravel, preceded by task automation with Python, and managed MySQL databases for efficient data storage and retrieval. Additionally, I served as the back-end developer for "KLINAPP," a mobile application project which served as our capstone project, integrating Firebase services including Realtime Database, Authentication, Storage, and Messaging. I designed role-specific interfaces for admin, cleaner, and client users, contributing to the project's success and enhancing user experience</p>
+                    </div>
+                </div> 
+                 <!-- Overlay -->
+                 <div id="overlay" onclick="togglePopup('aboutPopup')" class="overlay"></div>
+                 <script>
+                    function togglePopup(popupId) {
+                        var popup = document.getElementById(popupId);
+                        var overlay = document.getElementById('overlay');
+
+                        if (popup.style.display === "block") {
+                            popup.style.display = "none";
+                            overlay.style.display = "none";
+                        } else {
+                            popup.style.display = "block";
+                            overlay.style.display = "block";
+                        }
+                    }
+                    function smoothScroll(targetId) {
+                    var target = document.getElementById(targetId);
+                    if (target) {
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            }
+                </script>
+
+                
+            </div>
+        </div>
+       
+    </div>
+    
+<hr class="divider"> <!-- Line divider --> 
+<div class="contact-info" id="contact-info">
+    <p><i class='bx bx-envelope'></i>Email: antonioestepariverajr@gmail.com</p>
+    <p><i class='bx bxs-contact' ></i>Contact: +639772101601</p>
+    <p><i class='bx bxl-facebook' ></i>Facebook: <a href="https://www.facebook.com/antonio.rivera1123/" target="_blank">Antonio Rivera</a></p>
+    <p><i class='bx bxl-skype' ></i>Skype: <a href="https://join.skype.com/invite/tyo1WIvky9ce" target="_blank">Antonio Rivera Skype</a></p>
+</div>
+</body>
+
+</html>
