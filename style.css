@@ -350,3 +350,64 @@ hr.divider {
         margin-bottom: 10px; /* Add bottom margin to paragraphs for better spacing */
     }
 }
+@media screen and (max-width: 1000px) {
+    /* Add your existing styles for smaller screens */
+
+    /* Adjust font size for navigation links */
+    .nav .link ul a {
+        font-size: 14px;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Stack main content vertically on smaller screens */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Adjust image width for smaller screens */
+    .main .men {
+        width: 80%;
+    }
+
+    /* Center text content */
+    .main-detil {
+        text-align: center;
+    }
+
+    /* Center the contact info */
+    .contact-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Add bottom margin to separate contact info */
+    .contact-info p {
+        margin-bottom: 10px;
+    }
+
+    /* Adjust pop-up width for smaller screens */
+    .popup {
+        width: 80%;
+        max-width: 90%;
+    }
+
+    /* Decrease font size for better readability on smaller screens */
+    .popup-content {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Decrease heading font size for smaller screens */
+    .popup-content h2 {
+        font-size: 20px;
+    }
+
+    /* Add bottom margin to paragraphs for better spacing */
+    .popup-content p {
+        margin-bottom: 10px;
+    }
+}
