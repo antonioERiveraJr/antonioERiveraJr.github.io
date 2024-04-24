@@ -123,9 +123,7 @@
                 
             </div>
         </div>
-       
-    </div>
-    
+           
 <hr class="divider"> <!-- Line divider --> 
 <div class="contact-info" id="contact-info">
     <p><i class='bx bx-envelope'></i>Email: antonioestepariverajr@gmail.com</p>
@@ -133,6 +131,8 @@
     <p><i class='bx bxl-facebook' ></i>Facebook: <a href="https://www.facebook.com/antonio.rivera1123/" target="_blank">Antonio Rivera</a></p>
     <p><i class='bx bxl-skype' ></i>Skype: <a href="https://join.skype.com/invite/tyo1WIvky9ce" target="_blank">Antonio Rivera Skype</a></p>
 </div>
+    </div>
+
 </body>
 
 </html>
