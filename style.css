@@ -265,19 +265,7 @@ hr.divider {
     text-align: center;
     margin-top: 50px;
 }
-
-.contact-info p {
-    margin: 10px 0;
-}
-
-.contact-info a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
+ 
 .btn-2 {
     display: inline-block;
     padding: 10px 20px;
@@ -291,4 +279,74 @@ hr.divider {
 
 .btn-2:hover {
     background-color: #0056b3;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 1000px) {
+    .nav {
+        padding: 1%; /* Reduce padding for smaller screens */
+    }
+
+    .nav .link { 
+        align-items: center; /* Align links to the center */
+    }
+
+    .nav .link ul {
+        display: flex; 
+        align-items: center; /* Align menu items to the center */
+    }
+
+    .nav .link ul li {
+        margin-bottom: 10px; /* Add space between menu items */
+    }
+
+    .nav .link ul a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack main content vertically on smaller screens */
+        align-items: center; /* Center content horizontally */
+        gap: 20px; /* Add some space between elements */
+    }
+
+    .main .men {
+        width: 80%; /* Adjust image width for smaller screens */
+    }
+
+    .main-detil {
+        text-align: center; /* Center text content */
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-info {
+        text-align: center; /* Center the content */
+        margin-top: 20px; /* Add some top margin for spacing */
+    }
+
+    .contact-info p {
+        margin-bottom: 10px; /* Add bottom margin to separate contact info */
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 80%; /* Adjust pop-up width for smaller screens */
+        max-width: 90%; /* Set a maximum width to ensure readability */
+    }
+
+    .popup-content {
+        font-size: 14px; /* Decrease font size for better readability on smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .popup-content h2 {
+        font-size: 20px; /* Decrease heading font size for smaller screens */
+    }
+
+    .popup-content p {
+        margin-bottom: 10px; /* Add bottom margin to paragraphs for better spacing */
+    }
 }
