@@ -281,28 +281,7 @@ hr.divider {
     background-color: #0056b3;
 }
 /* Media query for smaller screens */
-@media screen and (max-width: 1000px) {
-    .nav {
-        padding: 1%; /* Reduce padding for smaller screens */
-    }
-
-    .nav .link { 
-        align-items: center; /* Align links to the center */
-    }
-
-    .nav .link ul {
-        display: flex; 
-        align-items: center; /* Align menu items to the center */
-    }
-
-    .nav .link ul li {
-        margin-bottom: 10px; /* Add space between menu items */
-    }
-
-    .nav .link ul a {
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
-}
+ 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .main {
@@ -411,3 +390,47 @@ hr.divider {
         margin-bottom: 10px;
     }
 }
+/* Media query for smaller screens */
+@media screen and (max-width: 1000px) {
+    /* Add your existing styles for smaller screens */
+    .nav {
+        padding: 1%; /* Reduce padding for smaller screens */
+    }
+    .nav .link { 
+        align-items: center; /* Align links to the center */
+    }
+    .nav .link ul {
+        display: flex; 
+        align-items: center; /* Align menu items to the center */
+    }
+    .nav .link ul li {
+        margin-bottom: 10px; /* Add space between menu items */
+    }
+    .nav .link ul a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack main content vertically on smaller screens */
+        align-items: center; /* Center content horizontally */
+        gap: 20px; /* Add some space between elements */
+    }
+    .main .men {
+        width: 80%; /* Adjust image width for smaller screens */
+        max-width: 200px; /* Set maximum width for smaller screens */
+    }
+    .main-detil {
+        text-align: center; /* Center text content */
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .main .men {
+        max-width: 150px; /* Further decrease maximum width for even smaller screens */
+    }
+}
+
