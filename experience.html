@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="document.body.style.opacity='1'">
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h2>Antonio </h2>
+            </a>
+        </div>
+        <div class="link">
+            <ul>
+                <li><a href="#" onclick="toggleAboutPopup()">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="index.html#contact-info">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">
+    <!-- Add a horizontal line with some design -->
+</body>
+
+
+    <div class="experience">
+        <div class="experience-item">
+            <h2>Intern</h2>
+            <p>Money Trees</p>
+            <p>Back End Developer</p>
+            <p>Baguio City</p>
+            <p>September 2023 – November 2023</p>
+            <br>
+            <img src="img/Mysql.png" alt="8Lotus Japan Surplus Image 1">
+            <img src="img/crud.webp" alt="8Lotus Japan Surplus Image 2">
+            <img src="img/automation.webp" alt="8Lotus Japan Surplus Image 3">
+            <img src="img/laravel.png" alt="8Lotus Japan Surplus Image 4">
+        </div>
+    </div>
+        <!-- About Popup -->
+        <div id="aboutPopup" class="popup">
+            <div class="popup-content">
+                <!-- Your About content goes here -->
+                <h2>About Me</h2>
+                <p>During my internship at Money Trees Company, I was part of the back-end development team where I utilized Laravel and Python to automate tasks, significantly improving team efficiency. I developed a CRUD system using Laravel, preceded by task automation with Python, and managed MySQL databases for efficient data storage and retrieval. Additionally, I served as the back-end developer for "KLINAPP," a mobile application project which served as our capstone project, integrating Firebase services including Realtime Database, Authentication, Storage, and Messaging. I designed role-specific interfaces for admin, cleaner, and client users, contributing to the project's success and enhancing user experience</p>
+            </div>
+        </div>
+    
+        <!-- Overlay -->
+        <div id="overlay" onclick="closePopups()" class="overlay"></div>
+    
+        <script>
+            function toggleAboutPopup() {
+                var popup = document.getElementById('aboutPopup');
+                var overlay = document.getElementById('overlay');
+    
+                if (popup.style.display === "block") {
+                    popup.style.display = "none";
+                    overlay.style.display = "none";
+                } else {
+                    popup.style.display = "block";
+                    overlay.style.display = "block";
+                }
+            }
+    
+            function closePopups() {
+                var popups = document.getElementsByClassName('popup');
+                var overlay = document.getElementById('overlay');
+    
+                for (var i = 0; i < popups.length; i++) {
+                    popups[i].style.display = "none";
+                }
+    
+                overlay.style.display = "none";
+            }
+        </script>
+</body>
+</html>
