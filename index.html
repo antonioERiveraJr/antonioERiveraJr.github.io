@@ -14,9 +14,9 @@
 <body onload="document.body.style.opacity='1'">
     <div class="hero">
         <div class="nav">
-            <div class="logo">
+            <!-- <div class="logo">
                 <h2>Antonio Estepa Rivera Jr</h2>
-            </div>
+            </div> -->
             <div class="link">
                 <ul> 
                     <li><a href="#" onclick="togglePopup('aboutPopup')">About</a></li>
@@ -36,10 +36,7 @@
                     </script>
                     
 
-                    <li><a href="projects.html">Projects</a></li>
-
-
-
+                    <li><a href="projects.html">Projects</a></li> 
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="#contact-info" onmouseover="smoothScroll('contact-info')">Contact</a></li>
               
@@ -52,7 +49,7 @@
             <div class="main-detil">
                 <p>Hello i'm</p>
                 <h1>Antonio E. Rivera Jr.</h1>
-                <h4>Back-end Devoloper</h4>
+                <h4>Developer</h4>
 
                 <div class="btn">
                     
@@ -60,18 +57,12 @@
                     <a href="mailto:antonioestepariverajr@gmail.com?subject=Job Opportunity&body=Hi Antonio, I'm interested in discussing a potential job opportunity with you." class="btn-2">Hire Me</a>
 
                     <script>
-                        function downloadCV() {
-                            // Create an anchor element
-                            var link = document.createElement("a");
-                            // Set the href attribute to the location of your CV file
-                            link.href = "CV.pdf";
-                            // Set the download attribute to specify the filename
-                            link.download = "CV.pdf";
-                            // Append the anchor element to the body
-                            document.body.appendChild(link);
-                            // Trigger a click event on the anchor element
-                            link.click();
-                            // Clean up: remove the anchor element from the body
+                        function downloadCV() { 
+                            var link = document.createElement("a"); 
+                            link.href = "CV.pdf"; 
+                            link.download = "CV.pdf"; 
+                            document.body.appendChild(link); 
+                            link.click(); 
                             document.body.removeChild(link);
                         }
                     </script>

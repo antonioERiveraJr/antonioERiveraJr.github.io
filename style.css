@@ -97,7 +97,7 @@ ul a .active {
     color: #fff;
     border: none;
     outline: none;
-    transition: all 2000ms ease-in-out;
+    transition: all 200ms ease-in-out;
 
 }
 
@@ -397,7 +397,8 @@ hr.divider {
         padding: 1%; /* Reduce padding for smaller screens */
     }
     .nav .link { 
-        align-items: center; /* Align links to the center */
+        align-items: flex-
+        end; /* Align links to the center */
     }
     .nav .link ul {
         display: flex; 
